@@ -20,7 +20,7 @@ class PostTable extends Table
         
         FROM articles
         
-        ORDER BY dateDernierModif ASC
+        ORDER BY dateDernierModif DESC 
         ");
     }
 

@@ -1,6 +1,8 @@
 <?php
-/**
+/*
  * Autoloader
+ * l'autoloader sera automatiquement appelée
+ * si vous essayez d'utiliser une classe qui n'est pas encore définie.
  */
 
 namespace App;

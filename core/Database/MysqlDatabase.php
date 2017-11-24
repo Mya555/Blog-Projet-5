@@ -25,7 +25,7 @@
 
         private $pdo;
 
-        public function __construct($db_name, $db_user = 'dbo708503737', $db_pass = 'motdepasse:Jack', $db_host = 'db708503737.db.1and1.com')
+        public function __construct($db_name, $db_user, $db_pass, $db_host)
         {
             $this->db_name = $db_name;
 
@@ -43,7 +43,7 @@
         {
             if($this->pdo === null)
             {
-                $pdo = new PDO('mysql:dbname=db708503737;host=db708503737.db.1and1.com', 'dbo708503737', 'motdepasse:Jack');
+                $pdo = new PDO('mysql:dbname=' . $this->db_name . ';host=' . $this->db_host, $this->db_user, $this->db_pass);
 
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
