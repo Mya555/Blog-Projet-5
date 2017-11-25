@@ -37,7 +37,8 @@
         }
 
         /*
-         * Connexion à la base de donnée via la variable @getPDO
+         * Connexion à la base de donnée via l'acceseur @getPDO
+         * il initialise
          */
         private function getPDO()
         {
