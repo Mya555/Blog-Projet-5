@@ -26,7 +26,7 @@ class Autoloader
      * Inclue le fichier correspondant à notre classe
      * @param $class string Le nom de la classe à charger
      */
-    
+
     static function autoload($class)
     {
         if (strpos($class, __NAMESPACE__ . '\\') === 0){

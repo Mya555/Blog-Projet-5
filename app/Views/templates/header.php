@@ -29,7 +29,8 @@
 <body>
 
 <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block"><\Dev's Blog></div>
-<div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">Ozdamirova Bella | 348 Place des étoiles | Mars, 98 300 | +33 668996611 </div>
+<div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">Ozdamirova Bella | 348 Place des étoiles | Mars, 98 300 | +33 668996611</div>
+<div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">Developer is the new Smart</div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
