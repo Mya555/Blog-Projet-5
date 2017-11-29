@@ -25,4 +25,4 @@
            </div>
        </div>
 
-<?php endf oreach; ?>
+<?php endforeach; ?>

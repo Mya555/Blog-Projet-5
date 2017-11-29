@@ -4,15 +4,30 @@ use Core\Config;
 
 use Core\Database\MysqlDatabase;
 
+/**
+ * Class App
+ */
 class App
 {
+    /**
+     * @var string
+     */
     public $title = "Dev's Blog";
 
 
+    /**
+     * @var
+     */
     private $db_instance;
 
+    /**
+     * @var
+     */
     private static $_instance;
 
+    /**
+     * @return App
+     */
     public static function getInstance(){
 
         if (is_null(self::$_instance)){
@@ -24,6 +39,10 @@ class App
 
     }
 
+    /**
+     * appelle une fonction qui se charge d'autoloading
+     *
+     */
     public static function load(){
 
         session_start();
@@ -38,6 +57,10 @@ class App
     }
 
 
+    /**
+     * @param $name
+     * @return mixed
+     */
     public  function getTable($name){
 
         $class_name = '\\App\\Table\\'. ucfirst($name) . 'Table';
@@ -46,6 +69,9 @@ class App
     }
 
 
+    /**
+     * @return MysqlDatabase
+     */
     public function getDb(){
 
         $config = Config::getInstance(ROOT . '/config/config.php');

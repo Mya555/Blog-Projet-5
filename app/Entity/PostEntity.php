@@ -4,18 +4,29 @@
 
     use Core\Entity\Entity;
 
-        class PostEntity extends Entity{
+    /**
+     * Class PostEntity
+     * @package App\Entity
+     */
+    class PostEntity extends Entity{
 
+
+        /**
+         * @return string
+         */
         public function getUrl(){
 
             return 'index.php?p=posts.show&id=' . $this->id;
 
         }
 
+        /**
+         * @return string
+         */
         public function getExtrait(){
 
 
-            $html = '<p>' . substr($this->chapo, 0, 255) . '...</p>';
+            $html = '<p>' . substr($this->chapo, 0, 255) . '...</p>'; //substr — Retourne un segment de chaîne
 
             $html .= '<p>' . $this->dateDernierModif . '</p>';
 

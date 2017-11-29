@@ -72,12 +72,6 @@ class Table
 
 
 
-    public function delete($id){
-
-        return $this->query("DELETE FROM {$this->table} WHERE  id = ?", [$id], true);
-
-    }
-
 
 
     public function create($fields){

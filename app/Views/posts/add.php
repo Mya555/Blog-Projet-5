@@ -3,10 +3,6 @@ header('Content-type: text/html; charset=UTF-8');
 ?>
 
 
-
-
-
-
 <div class="container">
 
     <div class="bg-faded p-4 my-4">

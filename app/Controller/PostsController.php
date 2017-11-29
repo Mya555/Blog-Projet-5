@@ -37,8 +37,9 @@ class PostsController extends AppController
     }
 
     /*
-     * Permet d'afficher une list des posts trié par la date décroissante
+     * Permet d'afficher une list des posts triés par la date décroissante
      */
+
     public function listP()
     {
 
@@ -56,6 +57,7 @@ class PostsController extends AppController
     /*
      * Permet d'afficher un post en particulier
      */
+
     public function show()
     {
 
@@ -69,6 +71,7 @@ class PostsController extends AppController
     /*
      * Permet d'éditer un post
      */
+
     public function edit()
     {
 
@@ -109,6 +112,7 @@ class PostsController extends AppController
     /*
      * Permet d'ajouter un post
      */
+
     public function add()
     {
         $date = date("Y-m-d  H:i:s ");
@@ -137,6 +141,7 @@ class PostsController extends AppController
     /*
      * Fonction d'envoie pour le formulaire de contact
      */
+
     public function contact(){
 
 // Vérification pour les champs vides

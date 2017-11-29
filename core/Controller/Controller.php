@@ -34,7 +34,7 @@
         }
 
             /**
-             * For not found pages
+             * Pour les pages non trouvées
              */
             protected function notFound() {
 

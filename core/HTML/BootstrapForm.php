@@ -2,17 +2,30 @@
 
 	namespace Core\HTML;
 
-	class BootstrapForm extends Form
+    /**
+     * Class BootstrapForm
+     * @package Core\HTML
+     */
+
+    class BootstrapForm extends Form
     {
 
+        /**
+         * @param $html
+         * @return string
+         */
         protected function surround($html)
         {
             return "<div class=\"form-group\">{$html}</div>";
         }
 
 
-
-
+        /**
+         * @param $name
+         * @param $label
+         * @param array $options
+         * @return string
+         */
         public function input($name, $label, $options = [])
         {
 
@@ -35,8 +48,12 @@
         }
 
 
-
-
+        /**
+         * @param $name
+         * @param $label
+         * @param $options
+         * @return string
+         */
         public function select($name, $label, $options)
         {
             $label = '<label>' . $label . '</label>';
@@ -62,6 +79,9 @@
         }
 
 
+        /**
+         * @return string
+         */
         public function submit()
         {
             return $this->surround('<button type="submit" class="btn btn-primary">Envoyer</button>');

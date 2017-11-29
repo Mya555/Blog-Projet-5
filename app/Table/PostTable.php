@@ -5,13 +5,22 @@ namespace App\Table;
 
 use Core\Table\Table;
 
+/**
+ * Class PostTable
+ * @package App\Table
+ */
 class PostTable extends Table
 {
 
+    /**
+     * @var string
+     */
     protected $table = 'articles';
 
 
-
+    /**
+     * @return array|bool|mixed|\PDOStatement
+     */
     public function last()
     {
         return $this->query("
@@ -25,10 +34,10 @@ class PostTable extends Table
     }
 
 
-
-
-
-
+    /**
+     * @param $id
+     * @return array|bool|mixed|\PDOStatement
+     */
     public function find($id){
 
         return $this->query("

@@ -1,6 +1,9 @@
 <?php
 
-    define('ROOT', dirname(__DIR__));
+/**
+ * remplace  la fonction par le mot ROOT
+ */
+define('ROOT', dirname(__DIR__));
 
    require ROOT . '/app/App.php';
 
@@ -8,7 +11,7 @@
 
 
     /*
-     * La fonction load s'occupe du chargement des class d'autoloading
+     * La fonction load s'occupe du chargement des classes d'autoloading
     */
    App::load();
 

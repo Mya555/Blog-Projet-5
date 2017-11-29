@@ -15,6 +15,10 @@
 
     class MysqlDatabase
     {
+        /**
+         * variables qui stockent les parametres de connexion à la base de donnée
+         * @var
+         */
         private $db_name;
 
         private $db_user;
@@ -25,6 +29,13 @@
 
         private $pdo;
 
+        /**
+         * MysqlDatabase constructor.
+         * @param $db_name
+         * @param $db_user
+         * @param $db_pass
+         * @param $db_host
+         */
         public function __construct($db_name, $db_user, $db_pass, $db_host)
         {
             $this->db_name = $db_name;
@@ -38,7 +49,7 @@
 
         /*
          * Connexion à la base de donnée via l'acceseur @getPDO
-         * il initialise
+         * @return PDO
          */
         private function getPDO()
         {
@@ -54,6 +65,12 @@
             return $this->pdo;
         }
 
+        /**
+         * @param $statement
+         * @param null $class_name
+         * @param bool $one
+         * @return array|mixed|\PDOStatement
+         */
         public function query($statement, $class_name = null, $one = false)
         {
             $req = $this->getPDO()->query($statement);
@@ -88,6 +105,13 @@
             return $datas;
         }
 
+        /**
+         * @param $statement
+         * @param $attributes
+         * @param null $class_name
+         * @param bool $one
+         * @return array|bool|mixed
+         */
         public function prepare($statement, $attributes, $class_name = null, $one = false)
         {
             $req = $this->getPDO()->prepare($statement);
@@ -131,6 +155,9 @@
         }
 
 
+        /**
+         * @return string
+         */
         public function lastInsertId() {
 
             return $this->getPDO()->lastInsertId();

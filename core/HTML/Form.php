@@ -55,7 +55,7 @@ class Form
 
     }
 
-    /**
+    /*
      * Class Form
      * Permet de générer la page
      */
@@ -70,7 +70,11 @@ class Form
         return $this->surround('<input type = "' . $type . '" name="' . $name . '"value="' . $this->getValue($name) . '/>');
     }
 
-
+    /**
+     * bouton d'envoi
+     * @return string
+     *
+     */
 
 
     public function submit()
@@ -81,9 +85,10 @@ class Form
 
     public function contact() {
 
-//Formulaire d'envoi
-
-// Vérification des champs vides
+/*
+ * Formulaire d'envoi
+ * Vérification des champs vides
+ */
 
 if(empty($_POST['name'])       ||
     empty($_POST['email'])     ||

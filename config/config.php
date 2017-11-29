@@ -1,5 +1,9 @@
     <?php
 
+    /**
+     * Données de connexion à la base de donnée
+     *
+     */
     return array(
 
         "db_user" => "root",
