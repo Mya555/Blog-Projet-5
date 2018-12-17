@@ -21,7 +21,7 @@
                 <div class="carousel-item">
                     <img class="d-block img-fluid w-100" src="img/chalet.png" alt="">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="text-shadow btn btn-secondary "><a href="http://bella-web.eu/">Accéder</a></p>
+                        <p class="text-shadow btn btn-secondary "><a href="http://site1.bella-web.eu/">Accéder</a></p>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@
             <div class="text-heading text-muted text-lg">Visitez</div>
             <h2 class="my-2">Mes réalisations</h2>
             <p class="text-shadow btn btn-secondary lien btn-sm ">
-                <a class="jaune" href="http://bella-web.eu/">Chalets&Caviar</a></p>
+                <a class="jaune" href="http://site1.bella-web.eu/">Chalets&Caviar</a></p>
                 <p class="text-shadow btn btn-secondary lien btn-sm ">
                     <a class="jaune" href="http://site2.bella-web.eu/">Films de plain Air</a></p>
             <div class="text-heading text-muted text-lg">
